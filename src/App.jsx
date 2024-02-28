@@ -6,7 +6,11 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  return <div>My Name is Hubert Yu</div>;
+  return (
+    <div>
+      <h1>Hubert Yu</h1>
+    </div>
+  );
 }
 
 export default App;
