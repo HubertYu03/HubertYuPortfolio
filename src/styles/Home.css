@@ -1,0 +1,25 @@
+@font-face{
+    font-family: "Regular";
+    src: local("FamiljenGrotesk"), url("/public/fonts/FamiljenGrotesk-Regular.ttf") format("truetype");
+}
+
+.banner {
+    font-family: "Regular";
+    font-size: 130px;
+    color: #403D39;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    writing-mode: vertical-rl;
+    text-align: right;
+
+    position: fixed;
+    rotate: 180deg;
+    height: 1200px;
+    margin-left: 130px;
+    bottom: -150px;
+
+
+    /* border: solid 1px blue; */
+
+    user-select: none;
+}

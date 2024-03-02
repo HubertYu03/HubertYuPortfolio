@@ -12,10 +12,24 @@ import "./styles/App.css";
 function App() {
   const [currentPage, setCurrentPage] = useState("home-link");
 
+  const container = {
+    hidden: { y: -20, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: { delay: 1.8 },
+    },
+  };
+
   return (
     <AnimatePresence>
       <Router>
-        <nav className="navbar">
+        <motion.nav
+          className="navbar"
+          initial="hidden"
+          animate="show"
+          variants={container}
+        >
           <Link to="/" className={currentPage}>
             Home
           </Link>
@@ -28,7 +42,7 @@ function App() {
           <Link to="/contact" className={currentPage}>
             Contact
           </Link>
-        </nav>
+        </motion.nav>
         <Routes>
           <Route path="/" element={<Home setCurrentPage={setCurrentPage} />} />
           <Route
