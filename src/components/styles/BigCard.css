@@ -1,0 +1,34 @@
+.projectCard {
+    height: 300px;
+    width: 800px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projectCard::before{
+    content: "";
+    opacity: 0.4;
+    background-image: url("https://careerkarma.com/blog/wp-content/uploads/2021/11/top-coding-projects.png");
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.projectCard:hover{
+    cursor: pointer;
+}
+
+.cardTitle {
+    position: relative;
+
+    font-family: "Bold";
+    font-size: 40px;
+    color: #FFFCF2;
+}

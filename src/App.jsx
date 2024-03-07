@@ -17,7 +17,7 @@ function App() {
     show: {
       y: 0,
       opacity: 1,
-      transition: { delay: 1.8 },
+      transition: { delay: 1.5 },
     },
   };
 

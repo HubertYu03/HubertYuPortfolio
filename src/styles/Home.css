@@ -75,3 +75,70 @@
     text-align: right;
     color: #FFFCF2;
 }
+
+.card-container {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.small-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.about-card {
+    height: 300px;
+    width: 375px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-card::before{
+    content: "";
+    opacity: 0.4;
+    background-image: url("https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg");
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.about-card:hover{
+    cursor: pointer;
+}
+
+.contact-card {
+    height: 300px;
+    width: 375px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-card::before{
+    content: "";
+    opacity: 0.4;
+    background-image: url("https://www.mattgorby.com/wp-content/uploads/2013/12/img-contact-me.jpg");
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.contact-card:hover{
+    cursor: pointer;
+}
